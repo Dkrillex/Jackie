@@ -3,9 +3,15 @@
 创建时间：2022-07-09
 创建说明：相关代码以及操作方便进行使用以及后面代码需要同步问题
 */
+//shell 查看代码操作
+history
 //文件创建账号密码等
 git config --global user.name "Dkrillex"
 git config --global user.email "1658176374@qq.com"
+//检查文件状态
+git status 
+//查看当前分支
+git branch
 //初始化文件生成git仓库
 git init
 //添加代码到缓存区
