@@ -19,8 +19,9 @@ git add .
 //提交代码到本地仓库（git里面）
 git commit -m "first commit"
 //创建分支
-git branch --set-upstream-to=origin/Jackie_Teemlink master
 git remote add origin https://github.com/Dkrillex/Jackie_Teemlink.git
+
+git branch --set-upstream-to=origin/Jackie_Teemlink master
 //查看远程库信息
 git remote 
 git remote -v
@@ -45,3 +46,16 @@ git reset HEAD就是回退到当前版本
 git reset --hard
 //拉取代码
 git push -u origin master
+
+
+//改名后代码分支
+/**
+The default branch has been renamed!
+master is now named main
+
+If you have a local clone, you can update it by running the following commands.
+*/
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
