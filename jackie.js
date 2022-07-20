@@ -21,15 +21,27 @@ git commit -m "first commit"
 //创建分支
 git branch --set-upstream-to=origin/Jackie_Teemlink master
 git remote add origin https://github.com/Dkrillex/Jackie_Teemlink.git
+//查看远程库信息
+git remote 
+git remote -v
 //拉代码下来到工作区
 git pull https://github.com/Dkrillex/Jackie_Teemlink.git master
 //拉代码到远程仓库
 git push https://github.com/Dkrillex/Jackie_Teemlink.git master
-//---代替以上2句
+//---代替以上2句 [origin:远程仓库/master：本地分支]
 git push -u origin master
 //--查看git提交日志
 git log --graph --oneline --all
 //合并分支代码
-git merge --no-ff master 
+git merge --no-ff master    
 //允许不关联历史代码提交
---allow-unrelated-histories
+git xxxxxxxxxxx --allow-unrelated-histories
+
+//拉取代码出现合并冲突
+/**
+git reset就是当我们提交了错误的内容后进行回退使用的命令
+git reset HEAD就是回退到当前版本
+*/
+git reset --hard
+//拉取代码
+git push -u origin master
