@@ -3,6 +3,10 @@
 修改时间：2022-07-21:19.50
 创建说明：相关代码以及操作方便进行使用以及后面代码需要同步问题
 */
+/** !!!!WARNING!!!
+部署后要先做远程仓库对接 然后先拉取 再提交
+git branch --set-upstream-to=origin/master master
+*/
 //shell 查看代码操作
 history
 //文件创建账号密码等
@@ -21,7 +25,7 @@ git commit -m "first commit"
 //创建分支
 git remote add origin https://github.com/Dkrillex/Jackie_Teemlink.git
 
-git branch --set-upstream-to=origin/Jackie_Teemlink master
+git branch --set-upstream-to=origin/master master
 //查看远程库信息
 git remote 
 git remote -v
@@ -63,3 +67,4 @@ git remote set-head origin -a
 
 //强制提交 -f
 git push -f
+
