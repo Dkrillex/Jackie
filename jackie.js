@@ -14,22 +14,22 @@ master: 本地的分支
 */
 //shell 查看代码操作
 history
-//文件创建账号密码等
+//#1--文件创建账号密码等
 git config --global user.name "Dkrillex"
 git config --global user.email "1658176374@qq.com"
 //检查文件状态
 git status 
 //查看当前分支
 git branch
-//初始化文件生成git仓库
+//#2--初始化文件生成git仓库
 git init
 //添加代码到缓存区
 git add . 
 //提交代码到本地仓库（git里面）
 git commit -m "first commit"
-//创建分支
+//#3--创建分支
 git remote add origin https://github.com/Dkrillex/Jackie_Teemlink.git
-
+//#4--配置远程分支和本地分支连接
 git branch --set-upstream-to=origin/master master
 //查看远程库信息
 git remote 
