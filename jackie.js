@@ -56,7 +56,13 @@ git reset --hard
 //拉取代码
 git push -u origin master
 
-
+//主干合并分支代码
+//@1、切换到主干
+git checkout main
+// @2、合并分支
+git merge master(分支)
+// @3、推送代码
+git push
 //改名后代码分支
 /**
 The default branch has been renamed!
