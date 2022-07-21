@@ -6,6 +6,11 @@
 /** !!!!WARNING!!!
 部署后要先做远程仓库对接 然后先拉取 再提交
 git branch --set-upstream-to=origin/master master
+git 分支   设置远程上游对接 分支名称/远程分支 本地分支
+git branch --set-upstream-to=<remote>/<branch> <master>
+remote：远程仓库名
+branch：远程仓库的分支
+master: 本地的分支
 */
 //shell 查看代码操作
 history
